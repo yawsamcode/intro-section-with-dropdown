@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-100">
+    <header>
+      <nav class="flex justify-between p-7 md:p-8">
+        <div class="flex">
+          <div>
+            <img class="pr-6" src="./img/logo.svg" alt="" />
+          </div>
+
+          <!-- Primary Nav  -->
+          <div class="hidden md:block">
+            <ul class="flex gap-6">
+
+
+            <li class="flex gap-2 items-baseline relative "><a href="#">Features</a>
+            <span><img id="arrow_feature_desk" class="cursor-pointer" src="./img/icon-arrow-down.svg" alt=""></span>
+            
+            <!-- Desktop Drop Down for Features -->
+         <ul id="dpdropdown_one" class="flex flex-col gap-2 px-4 py-2 -ml-6 mt-8 absolute bg-white text-sm rounded-md md:hidden">
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-todo.svg" alt="" />
+                <a class="pl-3" href="#">TodoList</a>
+              </li>
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-calendar.svg" alt="" />
+                <a class="pl-3" href="#">Calender</a>
+              </li>
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-reminders.svg" alt="" />
+                <a class="pl-3" href="#">Reminders</a>
+              </li>
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-planning.svg" alt="" />
+                <a class="pl-3" href="#">Planning</a>
+              </li>
+            </ul>
+            </li>
+
+            
+
+            <li class="flex gap-2 items-baseline cursor-pointer"><a href="#">Company</a>
+              <span><img id="arrow_company_desk" src="./img/icon-arrow-down.svg" alt=""></span>
+              
+              <!-- Desktop Drop Down for Company -->
+         <ul id="dpdropdown_two" class="flex flex-col gap-2 px-4 py-2 ml-4 mt-8 absolute bg-white text-sm rounded-md md:hidden">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Calender</a></li>
+        </ul>
+              </li>
+
+            <li class=""><a href="#">Careers</a></li>
+            <li class=""><a href="#">About</a></li>
+          </ul>
+          </div>
+
+
+
+        </div>
+        <!-- Secondary Nav  -->
+        <div class="hidden md:block">
+          <ul class="flex items-baseline gap-6">
+            <li class=""><a href="#">Login</a></li>
+            <button class="border border-black rounded-xl py-2 px-4 hover:shadow-3xl"><a href="#">Register</a></button>
+          </ul>
+        </div>
+
+        <!-- Open & Close Buttons for Mobile Nav-->
+        <div class="lg:hidden md:hidden flex">
+          <img
+            id="openbtn"
+            class="cursor-pointer h-6 w-6"
+            src="./img/icon-menu.svg"
+            alt=""
+          />
+        </div>
+      </nav>
+
+      <div
+        id="sidebarnav"
+        class="bg-white fixed inset-0 z-50 w-2/2 min-h-svh ml-64 hidden md:hidden lg:hidden"
+      >
+        <div>
+          <div class="flex justify-end">
+            <img
+              id="closebtn"
+              class="cursor-pointer pt-6 pr-6 h-12 w-12"
+              src="./img/icon-close-menu.svg"
+              alt=""
+            />
+          </div>
+          <ul class="pl-5">
+            <div class="flex items-center">
+              <li class="pb-1"><a href="#">Features</a></li>
+              <span class="pl-5 cursor-pointer"
+                ><img id="arrowdownone" src="./img/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <!-- Mobile Drop Down 1 -->
+            <ul id="featuresdropdown" class="px-4 hidden">
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-todo.svg" alt="" />
+                <a class="pl-3" href="#">Todo List</a>
+              </li>
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-calendar.svg" alt="" />
+                <a class="pl-3" href="#">Calender</a>
+              </li>
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-reminders.svg" alt="" />
+                <a class="pl-3" href="#">Reminders</a>
+              </li>
+              <li class="flex items-baseline">
+                <img class="w-3 h-4" src="./img/icon-planning.svg" alt="" />
+                <a class="pl-3" href="#">Planning</a>
+              </li>
+            </ul>
+
+            <div class="flex items-center">
+              <li class="pb-1"><a href="#">Company</a></li>
+              <span class="pl-3 cursor-pointer"
+                ><img id="arrowdowntwo" src="./img/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <!-- Mobile Drop Down 2 -->
+            <ul id="companydropdown" class="px-4 hidden">
+              <li>
+                <a class="pl-3" href="#">History</a>
+              </li>
+              <li>
+                <a class="pl-3" href="#">Our Team</a>
+              </li>
+              <li>
+                <a class="pl-3" href="#">Blog</a>
+              </li>
+            </ul>
+
+            <li class="pb-1"><a href="#">Career</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="pt-16 w-2/2 text-center px-4">
+          <ul>
+            <li class="pb-4"><a href="#">Login</a></li>
+            <div
+              class="border-solid border-2 border-slate-500 rounded-xl cursor-pointer"
+            >
+              <button class=""><a href="#">Register</a></button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main class="md:flex justify-around flex-row-reverse">
+      <div class="">
+        <img
+          class="md:hidden lg:hidden"
+          src="/public/img/image-hero-mobile.png"
+          alt=""
+        />
+        <img
+          class="hidden md:block lg:block bg-slate-100"
+          src="/public/img/image-hero-desktop3.png"
+          alt=""
+        />
+      </div>
+
+      <div class="md:px-4">
+        <h1 class="text-center pt-8 font-medium text-3xl md:hidden">
+          Make Remote work
+        </h1>
+
+        <h1
+          class="hidden text-center pt-8 font-medium text-3xl md:text-left lg:text-left md:block md:text-5xl   md:pt-24"
+        >
+          Make <br />Remote work
+        </h1>
+
+        <p
+          class="text-center pt-8 pb-8 md:text-left lg:text-left md:pb-20 md:pt-12"
+        >
+          Get your team in sync, no matter your location.<br> Streamline processes,
+          create team rituals,<br> and watch productivity soar.
+        </p>
+
+        <div class="flex justify-center md:justify-start lg:justify-start pb-16 md:pb-32">
+          <button
+            class="bg-black text-white font-bold rounded-xl py-2 px-4 shadow-xl hover:bg-white hover:text-black hover:border border-black"
+          >
+            <a href="">Learn more</a>
+          </button>
+        </div>
+
+        <div class="flex justify-center gap-3  h-4 md:justify-start">
+          <img src="./img/client-databiz.svg" alt="client-databiz" />
+          <img src="./img/client-audiophile.svg" alt="client-audiophile" />
+          <img src="./img/client-meet.svg" alt="client-meet" />
+          <img src="./img/client-maker.svg" alt="client-maker" />
+        </div>
+
+      </div>
+    </main>
+
+
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

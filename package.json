@@ -1,0 +1,21 @@
+{
+  "name": "intro-section-with-dropdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "preline": "^2.0.3",
+    "tw-elements": "^1.1.0"
+  }
+}
